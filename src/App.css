@@ -1,0 +1,130 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  align-items: center;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  /* height: 5vh; */
+  /* width: 100vw; */
+  color: white;
+}
+img {
+  height: 70vh;
+  width: 100vw;
+}
+
+.header {
+  color: #fed136;
+  font-size: 28px;
+}
+.welcome {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+}
+.meet {
+  font-size: 65px;
+  left: 35vw;
+  top: 35vh;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+main {
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.more {
+  font-size: 15px;
+  background-color: #fed136;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  width: 200px;
+  font-weight: bolder;
+}
+img {
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  img {
+    display: inline;
+  }
+  ul {
+    display: none;
+  }
+}
+
+@media (max-width: 80px) {
+  header {
+    background-color: gray;
+  }
+}
+.top-menu- {
+  width: 100vw;
+  height: 32vh;
+  position: absolute;
+  top: 0px;
+  display: none;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.top-menu-open {
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  top: 0px;
+  background: rgb(34, 28, 28);
+  animation: openMenu 1s;
+  z-index: 0;
+  color: white;
+  padding-left: 180px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.top-menu-closed {
+  animation: closeMenu 2s;
+  width: 100vw;
+  height: 35vh;
+  position: absolute;
+  top: 0px;
+  background: rgb(34, 28, 28);
+  animation-fill-mode: forwards;
+  display: none;
+}
+@keyframes openMenu {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 35vh;
+  }
+}
+@keyframes closeMenu {
+  from {
+    height: 35vh;
+  }
+  to {
+    height: 0px;
+  }
+}
